@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.group {
+    float: left;
+    text-align: center;
+    margin: 50px;
+}
+
+.createbutton::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.float {
+    display: flex;
+    flex-direction: row;
+}
+
+.left:first-of-type {
+    width: 50%;
+    padding: 0 50px;
+}
+
+.left:nth-of-type(2){
+    margin-top: 80px;
+}
+
+#forma, #forma2 {
+    display: none;
+    margin-bottom: 30px;
+    transition:  0.8s ease;
+}
+.btn-user, .left:nth-of-type(2) input {
+    border: 2px solid #39bda7;
+    padding: 5px 7px;
+    background: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #1b1b1b;
+
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 18px;
+    transition: all 0.4s;
+}
+.btn-user, .left:nth-of-type(2) input:focus {
+    border-radius: 5px;
+}
+table tbody tr td button:last-child:hover {
+    background: #bd394f;
+    border:1px solid #bd394f;
+}
+#btn-user:hover, .left:nth-of-type(2) input:hover {
+    border: 2px solid #39bda7;
+    border-radius: 5px;
+}
+
+#user-table {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    color: #1b1b1b;
+    padding: 5px;
+    border-collapse: collapse;
+
+}
+
+#user-table th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+#user-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#user-table thead tr:first-of-type {
+    background-color: #39bda7;
+    color: #fff;
+    border: 1px solid #39bda7;
+
+}
+
+#user-table tr:last-of-type {
+    border-bottom: 1px solid #ddd;
+}
+
+.btn-table {
+    background: white;
+    border: 1px solid #39bda7;
+    padding: 4px 6px;
+    border-radius:7px;
+    -webkit-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
+
+}
+
+.btn-table:hover {
+    cursor: pointer;
+    color:#fff;
+    background-color: #bda739;
+    border-color:#bda739;
+
+}
+
+#user-table thead tr th button i {
+    padding: 5px 7px;
+    background: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #1b1b1b;
+}
+
+#create:hover {
+    background-color: #39bda7;
+    color:#fff;
+}
+
+#upd-user {
+    transition: all 0.4s;
+}
+
+#search:hover {
+    background-color: #fff;
+    color: #000;
+    border:1px solid #39bda7;
+}
+
+#upd-user:hover {
+    background-color: #39bda7;
+    color:#fff;
+}
+
+.left #forma #create-user {
+    transition: all 0.4s;
+}
+
+#edit-name,#edit-email {
+    color:#000;
+}
+
+
+
+.left #forma #create-user:hover {
+    background-color: #39bda7;
+    color:white;
+}
